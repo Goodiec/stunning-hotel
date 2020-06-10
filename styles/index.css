@@ -1,3 +1,5 @@
+@import'http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css';
+
 * {
     margin: 0;
     padding: 0;
@@ -6,11 +8,31 @@
 html{
     scroll-behavior: smooth;
 }
-body{
+html,body{
     padding: 0;
     margin: 0;
+    height: 100%;
+    width: 100%;
 }
+
 /* Start header and menu area style*/
+.menu-btn{
+    float: right;
+    padding: 0 10px;
+    font-size: 40px;
+    text-decoration: none;
+    color: #2c3e50;
+    font-family: Ionicons;
+    cursor: pointer;
+}
+.menu-btn::before{
+    content:'\f20d';
+}
+
+.menu-btnc::before{
+    content:'\f12a';
+}
+
 .top-nav{
     top: 0;
     width: 100%;
