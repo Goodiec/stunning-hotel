@@ -217,7 +217,10 @@ body {
 header {
     height: 645px;
     width: 100%;
-    background-image: url('../assets/moto-moto-sc-bCXogq-q_V8-unsplash.jpg');
+    background-image:
+     
+    linear-gradient(to top right,rgba(26, 24, 24, 0.589),rgba(34, 31, 31, 0.589)),
+     url('../assets/moto-moto-sc-bCXogq-q_V8-unsplash.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -296,12 +299,12 @@ header {
 }
 
 .intro__text h1 {
-    font-size: 50px;
+    font-size: 2.5rem;
     text-transform: uppercase;
 }
 
 .intro__text p {
-    font-size: 22px;
+    font-size: 1.5rem;
 }
 
 .hero {
@@ -470,5 +473,15 @@ header {
 
     .card h1 {
         font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .card {
+        width: 335px;
+    }
+
+    .facilities__list .card {
+        margin: 18px 12px;
     }
 }
