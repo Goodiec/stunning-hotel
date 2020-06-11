@@ -478,7 +478,7 @@ header {
 
 @media only screen and (max-width: 992px) {
     .card {
-        width: 335px;
+        width: 350px;
     }
 
     .facilities__list .card {
