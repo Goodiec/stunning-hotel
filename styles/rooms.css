@@ -1,17 +1,33 @@
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
-html{
-    scroll-behavior: smooth;
+
+.header {
+    height: 645px;
+    width: 100%;
+    background-image: 
+    linear-gradient(to top right,rgba(26, 24, 24, 0.589),rgba(34, 31, 31, 0.589)),
+    url('../assets/moto-moto-sc-bCXogq-q_V8-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.intro__text {
+    color: #fff;
+    text-align: center;
+}
+.intro__text h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
 }
 
-body, html{
-    padding: 0;
-    margin: 0;
-    height: 100%;
-    width: 100%;
+.intro__text p {
+    font-size: 1.5rem;
+}
+body {
+    background:#E5E5E5 ;
 }
 
 /* Start header and menu area style*/
@@ -27,102 +43,6 @@ body, html{
 
 } 
 
-.menu-btn{
-    width: 40px;
-    height: 30px;
-    position: absolute;
-    right: 3%;
-    top: 15%;
-    z-index: 10001;
-    background-color: #fff;
-    background-image: url('../assets/Icons/menu.svg');
-    background-repeat: no-repeat;
-    background-size: 40%;
-    background-position: center;
-    cursor: pointer;
-}
-@media screen and (max-width:1200px){
-    .menu-btn{
-        right: 3.8%;
-    }
-}
-@media screen and (max-width:990px){
-    .menu-btn{
-        right: 4.4%;
-    }
-}
-@media screen and (max-width:990px){
-    .menu-btn{
-        right: 4.8%;
-    }
-}
-@media screen and (max-width:805px){
-    .menu-btn{
-        right: 5%;
-    }
-}
-@media screen and (max-width:780px){
-    .menu-btn{
-        right: 5.3%;
-    }
-}
-@media screen and (width:680px), screen and (height: 360px){
-    .menu-btn{
-        right: 6%;
-        top: 25%;
-    }
-}
-@media screen and (width:731px), screen and (height: 411px){
-    .menu-btn{
-        right: 6%;
-        top: 25%;
-    }
-}
-@media screen and (width:568px), screen and (height: 320px){
-    .menu-btn{
-        right: 8%;
-        top: 30%;
-    }
-}
-@media screen and (width:667px), screen and (height: 375px){
-    .menu-btn{
-        right: 6%;
-        top: 28%;
-    }
-}
-@media screen and (width:763px), screen and (height: 414px){
-    .menu-btn{
-        right: 5.5%;
-        top: 26%;
-    }
-}
-@media screen and (width:640px), screen and (height: 384px){
-    .menu-btn{
-        right: 6%;
-        top: 26%;
-    }
-}
-@media screen and (max-width:580px){
-    .menu-btn{
-        right: 7.3%;
-    }
-}
-@media screen and (max-width:500px){
-    .menu-btn{
-        right: 9%;
-    }
-}
-@media screen and (max-width:400px){
-    .menu-btn{
-        right: 11%;
-    }
-}
-@media screen and (max-width:320px){
-    .menu-btn{
-        right: 12.4%;
-        top: 17%;
-    }
-}
 .top-nav div{
     display: flex;
     flex-wrap: wrap;
@@ -190,35 +110,30 @@ body, html{
 .nav-sidebar{
     position: absolute;
     right: 0;
-    width: 50px;
+    width: 272px;
     padding: 0 5px;
     height: fit-content;
     background-color: transparent;
     z-index: 1000;
     transition: all 0.3s ease-in-out;
+
 }
 
 .nav-sidebar ul{
    padding-top: 15px;
    overflow: hidden;
-   visibility: hidden;
    color: #fff !important;
-}
-@media screen and (max-width:640px){
-    .nav-sidebar ul{
-        background-color: #222222;
-        opacity: 0.8;
-    }
+
 }
 
 .nav-sidebar ul li{
    line-height: 60px;
    list-style: none;
 }
-.nav-sidebar ul li a:hover .act-circle{
+.nav-sidebar ul li a:hover .fa-circle{
     color: #fff;
 }
-ul li a.active .act-circle{
+ul li a.active .fa-circle{
     color: #fff;
 }
 .nav-sidebar ul li a{
@@ -264,15 +179,11 @@ ul.social-icons li a{
 
 ul.social-icons .fa-facebook-f:hover{
     color:#3b5998;
-    transition: color 1s ease-in;
-    cursor: pointer;
   }
   ul.social-icons .fa-instagram:hover{
     color:#3f729b;
-    transition: color 1s ease-in;
-    cursor: pointer;
   }
-.act-circle{
+.fa-circle{
     border: 1px solid #fff;
     border-radius: 10px;
     color: transparent;
@@ -280,33 +191,76 @@ ul.social-icons .fa-facebook-f:hover{
 }
 /*End header and menu area style*/
 
-/* === global styles to all elements === */
-/* box-shadow on cards to be accesible by all components */
-.box-shadow {
-    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.05),
-    0 6.7px 5.3px rgba(0, 0, 0, 0.05), 0 12.5px 10px rgba(0, 0, 0, 0.05),
-    0 22.3px 17.9px rgba(0, 0, 0, 0.05), 0 36.8px 28.4px rgba(0, 0, 0, 0.05),
-    0 52px 33px rgba(0, 0, 0, 0.05);
+/* MY CODE room and rates style BEGINS*/
+.card {
+    width: 100%;
+}
+.room-desc{
+    font-size: 2.5rem;
+    font-family: 'GFS Didot', serif;
+    font-weight: normal;
+}
+.select-margin{
+    background:#E5E5E5 ;
+    width: 25%;
+    border: 1px solid #6F6F6F;
+    box-sizing: border-box;   
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300; 
 }
 
-/* global scroll bar for all pages */
-::-webkit-scrollbar {
-    width: 8px;
-    height: 9px;
-}
-::-webkit-scrollbar-track {
-    background: #e5e5e5;
-}
-::-webkit-scrollbar-thumb {
-    background: #8f3e43;
-    border-radius: 8px;
+.price{
+    font-size: 1.8rem;
+    color: #111111;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    letter-spacing: 0.105em;
 }
 
-/* === all global styles ends here === */
+.icon-padding{
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.details{
+    font-size: 0.7rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+.hotel-img{
+    height: 70vh;
+}
+
+.button-first{
+    background: #8F3E43;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    border-radius: 3px;
+    letter-spacing: 0.105em;
+}
+
+.button-second{
+    background: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #8F3E43;
+    letter-spacing: 0.105em;
+    border: 1px solid #8F3E43;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+    .column{
+        height: 3rem;
+    }
+
+    /* MY CODE Room and Rates style ENDS */
+
 
 
 /*Start footer style*/
-@media screen and (max-width:2800px){
+@media screen and (max-width:1440px){
     footer{
         background-color: #8f3e43;
         color: #FFFFFF;
@@ -473,4 +427,3 @@ ul.social-icons .fa-facebook-f:hover{
     
 }
 /*End footer style*/
-

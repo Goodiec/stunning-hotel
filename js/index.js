@@ -15,10 +15,11 @@ addActive();
 
 //End Menu-header area function
 
+//Start Toggle Menu
 let toggleNavStatus = false;
 let menuToggleBtn = document.querySelector(".menu-btn");
 
-menuToggleBtn.addEventListener("click", function(){
+let toggleNav = function(){
     let getSidebar = document.querySelector(".nav-sidebar");
     let getSidebarUl = document.querySelector(".nav-sidebar ul");
 
@@ -40,8 +41,6 @@ menuToggleBtn.addEventListener("click", function(){
         getSidebarUl.style.visibility = "visible";
         toggleNavStatus = false;
     }
+};
+//End Toggle Menu function
 
-}).classList.toggle('menu-btnc');
-
-
-    
