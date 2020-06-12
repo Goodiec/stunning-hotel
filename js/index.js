@@ -41,27 +41,6 @@ let toggleNav = function(){
         getSidebarUl.style.visibility = "visible";
         toggleNavStatus = false;
     }
-
 };
 //End Toggle Menu function
 
-// form validation starts here
-// const firstName = document.getElementById("name")
-// const lastName = document.getElementById("lastname")
-// const email = document.getElementById("email")
-// const message = document.getElementById("message")
-// const err__message = document.getElementById("err")
-
-// function send() {
-//     if(firstName.value === '') {
-//         err__message.innerText = 'firstname cannot be blank'
-//     }
-
-//     console.log("please c'mon")
-
-// }
-
-// document.getElementById("submit__btn").addEventListener('click', function(e) {
-//     e.preventDefault()
-//     send()
-// })
