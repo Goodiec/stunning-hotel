@@ -299,12 +299,20 @@ header {
 }
 
 .intro__text h1 {
+<<<<<<< HEAD
     font-size: 2.5rem;
+=======
+    font-size: 50px;
+>>>>>>> footerdev
     text-transform: uppercase;
 }
 
 .intro__text p {
+<<<<<<< HEAD
     font-size: 1.5rem;
+=======
+    font-size: 22px;
+>>>>>>> footerdev
 }
 
 .hero {
@@ -475,6 +483,7 @@ header {
         font-size: 20px;
     }
 }
+<<<<<<< HEAD
 
 @media only screen and (max-width: 992px) {
     .card {
@@ -485,3 +494,5 @@ header {
         margin: 18px 12px;
     }
 }
+=======
+>>>>>>> footerdev

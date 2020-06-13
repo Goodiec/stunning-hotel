@@ -14,6 +14,7 @@ let addActive = function(){
 addActive();
 
 //End Menu-header area function
+<<<<<<< HEAD
 
 //Start Toggle Menu
 let toggleNavStatus = false;
@@ -44,3 +45,5 @@ let toggleNav = function(){
 };
 //End Toggle Menu function
 
+=======
+>>>>>>> footerdev
